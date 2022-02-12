@@ -1,0 +1,44 @@
+/**
+    @author - Pathum Kaleesha
+    @create - 2/4/2022 - 4:20 PM
+    @since - V0.0.1
+**/
+
+.homePageSection{
+    width: 100vw;
+    height: 100vh;
+}
+.posNavi{
+    z-index: 5;
+    width: 100vw;
+    background: linear-gradient(to right, #7ad2af, #c778ff);
+}
+.naviItems>li:hover{
+    background-color: #eade0c;
+}
+.searchCustomer{
+    background-color: #c8c8c8;
+}
+.btnRegister{
+    right: 30%;
+}
+.btnViewAllCustomers{
+    right: 0;
+}
+.itemTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
+}
+.customeTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
+}
+.cartTbleDiv{
+    position: relative;
+    height: 20vh;
+    overflow: auto;
+}
