@@ -1,0 +1,231 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @create - 2022-03-12 - 21.28
+    * @since - v0.1.0 
+**/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <style>
+        body {
+            background: url("assets/image/bgImages/bgimage.jpeg");
+            background-size: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!--Navigation Start-->
+<nav class="navbar navbar-expand-lg  navbar-dark navtop">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="" >POS SYSTEM</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active navigation" href="index.html" id="linkHome">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation" href="customer.html" id="linkCustomer">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation" href="item.html" id="linkItem">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navigation" href="order.html" id="linkOrder">Orders</a>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!--Navigation End-->
+<section class="container-fluid" id="orderForm">
+    <div class="container " id="placeOrder">
+        <section class="row m-2 rounded-3">
+            <div class="col bg-light m-1 card od">
+                <h5 class="card-header  manageCustomer " style="color: whitesmoke">Customer</h5>
+                <div class="card-body">
+                    <form class="row ">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" for="orderFormCustomerTp">Order Id :</label>
+                                <input class="form-control" id="orderId" placeholder="0001" readonly="readonly" required
+                                       type="text">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" for="date">Date :</label>
+                                <input class="form-control" id="date" required type="date">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5">
+                                <label class="form-label fw-bold" for="orderFormCstId">Customer Id :</label>
+                                <select aria-label=".form-select-lg example" class="form-select form-select-sm mb-3"
+                                        id="orderFormCstId">
+
+                                </select>
+                            </div>
+                            <div class="col-md-7">
+                                <label class="form-label fw-bold" for="orderFormCustomerName">Customer Name :</label>
+                                <input class="form-control" id="orderFormCustomerName" readonly="readonly" required
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <label class="form-label fw-bold" for="orderFormCustomerAddress">Customer Address
+                                    :</label>
+                                <input class="form-control" id="orderFormCustomerAddress" readonly="readonly" required
+                                       type="text">
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold" for="orderFormCustomerTp">Customer Tp :</label>
+                                <input class="form-control" id="orderFormCustomerTp" readonly="readonly" required
+                                       type="text">
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col bg-light m-1 card">
+                <h5 class="card-header manageCustomer " style="color: whitesmoke">Item Select</h5>
+                <div class="card-body">
+                    <form class="row">
+                        <div class="row mb-5">
+                            <div class="col-md-6 fw-bold">
+                                <label class="form-label" for="orderFormItemId">Item Id :</label>
+                                <select aria-label="Default select example" class="form-select form-select-sm mb-3"
+                                        id="orderFormItemId">
+                                    <option selected></option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 fw-bold">
+                                <label class="form-label" for="orderFormItemName">Item Name :</label>
+                                <input class="form-control" id="orderFormItemName" readonly="readonly" required
+                                       type="text">
+                            </div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-4 fw-bold">
+                                <label class="form-label" for="orderFormQty">Item Qty :</label>
+                                <input class="form-control" id="orderFormQty" readonly="readonly" type="text">
+                            </div>
+
+                            <div class="col-md-4 fw-bold">
+                                <label class="form-label" for="orderFormPrice">Item Price :</label>
+                                <input class="form-control" id="orderFormPrice" readonly="readonly" required
+                                       type="text">
+                            </div>
+
+                            <div class="col-md-4 fw-bold">
+                                <label class="form-label" for="orderQty">Order Qty :</label>
+                                <input class="form-control" id="orderQty" required type="text">
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div>
+                            <button class="btn bg-warning p-2 text-dark bg-opacity-50 fw-bold" id="btnAddItem"
+                                    type="button">Add Item
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col bg-white bg-opacity-10 m-1 card" style="width: 18rem;">
+                <div class="row mb-5">
+                    <div class="card-body">
+                        <div class="col-md-6 fw-bold ">
+                            <label class="form-label text-primary bg-opacity-10" for="total">Total </label>
+                            <h2 class="fw-lighter text-primary bg-opacity-10" id="total">00.00/=</h2>
+                        </div>
+
+                        <div class="col-md-6 fw-bold ">
+                            <label class="form-label text-danger bg-opacity-10" for="subTotal">SubTotal </label>
+                            <h2 class="fw-lighter text-danger bg-opacity-10" id="subTotal">00.00/=</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 fw-bold">
+                                <label class="form-label" for="orderFormItemName">Cash :</label>
+                                <input class="form-control" id="txtCash" required type="text">
+                            </div>
+
+                            <div class="col-md-6 fw-bold">
+                                <label class="form-label" for="orderFormItemName">Discount :</label>
+                                <input class="form-control" id="txtDiscount" readonly="readonly" required type="text">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 fw-bold">
+                                <label class="form-label" for="orderFormItemName">Balance :</label>
+                                <input class="form-control" id="txtBalance" readonly="readonly" required type="text">
+                            </div>
+
+                            <div class="col-md-6 fw-bold mt-4">
+                                <button class="btn bg-success p-2 text-white bg-opacity-100 fw-bold" id="btnPurchase"
+                                        type="button">Purchase
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row m-2">
+            <table class="table manageCustomer table-striped mt-5">
+                <thead>
+                <tr>
+                    <th scope="col">Item Id</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Function</th>
+                </tr>
+                </thead>
+                <tbody id="orderFormTableBody">
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+</section>
+
+
+
+<script src="assets/boostrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+</body>
+</html>

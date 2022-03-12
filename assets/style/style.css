@@ -1,44 +1,83 @@
 /**
-    @author - Pathum Kaleesha
-    @create - 2/4/2022 - 4:20 PM
-    @since - V0.0.1
+    * @author _ Pathum_Kaleesha
+    * @created - 2022-02-19 - 19.39
+    * @since - v0.1.0 - CSS
 **/
 
-.homePageSection{
-    width: 100vw;
-    height: 100vh;
+.nav-item {
+    font-weight: bold;
+    font-size: 20px;
 }
-.posNavi{
-    z-index: 5;
-    width: 100vw;
-    background: linear-gradient(to right, #7ad2af, #c778ff);
+
+body > nav > div > a {
+    color: skyblue !important;
 }
-.naviItems>li:hover{
-    background-color: #eade0c;
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
 }
-.searchCustomer{
-    background-color: #c8c8c8;
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
-.btnRegister{
-    right: 30%;
+
+#homediv{
+    position: fixed;
+
+    padding: 20px;
+    z-index: 100;
 }
-.btnViewAllCustomers{
-    right: 0;
+.myCard{
+
+    width: 100%;
+    height: 250px;
+    background: #3c5168;
+    border-radius: 10px;
+
 }
-.itemTableDiv{
+.myCard>i{
+    color: #dfc2c4;
+    font-size: 5em;
+    text-align: center;
+    display: block;
+    padding-top: 35px;
+    opacity:0.6;
+}
+
+.myCard>h1{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 20px;
+
+}
+
+.myCard>h2{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: Ubuntu;
+    padding-top: 2px;
+}
+.manageCustomer{
+    background-color: skyblue;
+}
+.navtop{
+    background: rgb(30,30,30);opacity:0.8;
+}
+.navigation:hover{
+    color: red !important;
+}
+.cm{
     position: relative;
-    height: 30vh;
-    overflow: auto;
-    background-color: white;
+    left: 12px;
+
 }
-.customeTableDiv{
-    position: relative;
-    height: 30vh;
-    overflow: auto;
-    background-color: white;
+.od{
+
 }
-.cartTbleDiv{
-    position: relative;
-    height: 20vh;
-    overflow: auto;
-}
+
